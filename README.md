@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DCM Dashboard - Visualización de Portafolios Crypto
 
-## Getting Started
+![Banner DCM Dashboard](public/dcm-dashboard.png)
 
-First, run the development server:
+## 📊 Descripción
+
+DCM Dashboard es una aplicación web moderna que permite visualizar, analizar y gestionar portafolios de inversiones en criptomonedas. Diseñada con una interfaz elegante y funcional, esta herramienta facilita el seguimiento de rendimientos, comparación de activos y análisis de tendencias en tiempo real.
+
+## ✨ Características
+
+- **Visualización en tiempo real**: Sigue el rendimiento de tus activos crypto con gráficos interactivos
+- **Análisis de portafolio**: Estadísticas detalladas sobre rendimiento, volatilidad y correlación
+- **Diversificación**: Métricas de distribución de activos y recomendaciones
+- **Comparativas**: Contrasta el rendimiento de diferentes criptomonedas
+- **Modo oscuro/claro**: Interfaz adaptable a tus preferencias visuales
+- **Diseño responsivo**: Experiencia optimizada en dispositivos móviles y de escritorio
+
+## 🚀 Tecnologías
+
+- **Frontend**: Next.js, React, TypeScript
+- **Gráficos**: Recharts
+- **Estilos**: TailwindCSS
+- **Gestión de estado**: React Hooks
+- **Backend**: Supabase
+- **Autenticación**: Supabase Auth
+
+## 🛠️ Instalación
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/tucuenta/dcm-dashboard.git
+
+# Navegar al directorio
+cd dcm-dashboard
+
+# Instalar dependencias
+npm install
+# o con pnpm
+pnpm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Editar .env.local con tus credenciales
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
+# o con pnpm
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🖥️ Uso
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Accede a la aplicación en `http://localhost:3000` después de iniciar el servidor de desarrollo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Inicia sesión o crea una cuenta
+2. Importa tu portafolio o añade activos manualmente
+3. Explora las distintas secciones del dashboard
+4. Personaliza widgets y visualizaciones según tus necesidades
 
-## Learn More
+## 🔒 Seguridad
 
-To learn more about Next.js, take a look at the following resources:
+DCM Dashboard implementa estrictas medidas de seguridad:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- No almacena claves privadas de monederos (wallets)
+- Conexiones cifradas mediante HTTPS
+- Autenticación segura a través de Supabase Auth
+- Almacenamiento encriptado de datos sensibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Licencia
 
-## Deploy on Vercel
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💬 Contacto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para soporte, sugerencias o colaboraciones, contáctanos en:
+- Email: [soporte@dcm-dashboard.com](mailto:soporte@dcm-dashboard.com)
+- Twitter: [@DCMDashboard](https://twitter.com/DCMDashboard)
+- GitHub: [github.com/tucuenta/dcm-dashboard](https://github.com/tucuenta/dcm-dashboard)
